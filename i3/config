@@ -8,6 +8,7 @@ gaps inner 15
 gaps outer 5
 new_window none
 
+gaps inner 15
 # font for window titles
 font pango:monospace 8
 
@@ -170,5 +171,5 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Startup programs
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-picom --experimental-backends --config ~/.config/picom/picom.conf
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
+exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
