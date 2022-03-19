@@ -170,6 +170,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Startup programs
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
+# Startup programs and scripts
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
+exec_always --no-startup-id xset r rate 233 43
+exec_always --no-startup-id setxkbmap -option caps:escape
+exec_always --no-startup-id xsetroot -cursor_name left_ptr
