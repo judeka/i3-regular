@@ -12,7 +12,7 @@ new_window none
 font pango:monospace 8
 
 # wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/galaxy.jpg &
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/blackstar.png &
 # uncomment this, modify path, and disable compositor for GIF wallpaper
 #exec --no-startup-id mpv -wid 0 ~/Downloads/mist.gif -scale oversample --video-zoom=0.11 -loop inf &
 
@@ -169,5 +169,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start polybar
+# Startup polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+picom --experimental-backends --config ~/.config/picom/picom.conf
