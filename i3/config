@@ -169,6 +169,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Startup polybar
+# Startup programs
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 picom --experimental-backends --config ~/.config/picom/picom.conf
